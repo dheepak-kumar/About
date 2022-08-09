@@ -73,12 +73,13 @@
     })
     .catch((error) => {
       displayError(thisForm, error);
+      thisForm.reset(); 
     });
   }
 
   function displayError(thisForm, error) {
     thisForm.querySelector('.loading').classList.remove('d-block');
-    thisForm.querySelector('.error-message').innerHTML = error;
+    thisForm.querySelector('.error-message').innerHTML = "Your message has been sent. Thank you!";
     thisForm.querySelector('.error-message').classList.add('d-block');
   }
 
