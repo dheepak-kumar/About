@@ -667,7 +667,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="https://formsubmit.co/dheepakkumar0@gmail.com" method="POST">
+            <form action="https://formsubmit.co/dheepakkumar0@gmail.com" method="POST" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -695,23 +695,6 @@
         </div>
 
       </div>
-      <script src="https://smtpjs.com/v3/smtp.js"></script>
-      <script>
-            function sendmail(){
-            Email.send({
-                Host : "smtp.gmail.com",
-                Username : "llsmartambulancell@gmail.com",
-                Password : "ll123456789ll",
-                To : 'dheepakkumar0@gmail.com',
-                From : document.getElementById("email").value,
-                Subject : "New Contact Form Enquiry",
-                Body : "And this is the body"
-            }).then(
-              message => alert(message)
-            );
-
-            }
-      </script>
     </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
